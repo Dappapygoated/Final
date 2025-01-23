@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+        .main-nav {
+            background-color: #393838;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+        .nav-options {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .nav-options a,
+        .nav-options select {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+        .nav-options a:hover,
+        .nav-options a:focus {
+            color: white;
+            outline: 2px solid rgb(255, 255, 255);
+            font-size: larger;
+            font-style: italic;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .search-container input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            outline: 2px solid transparent;
+        }
+        .search-container input[type="text"]:focus {
+            outline: 2px solid blue;
+        }
+        .search-container button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .search-container button:hover,
+        .search-container button:focus {
+            background-color: #777;
+            outline: 2px solid blue;
+        }
+        .sub-nav {
+            background-color: #393838;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .sub-nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            margin: 0 15px;
+        }
+        .sub-nav a:hover,
+        .sub-nav a:focus {
+            color: yellow;
+            font-size: larger;
+            font-style: italic;
+        }
+        footer {
+            background-color: #393838;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        footer a:hover,
+        footer a:focus {
+            text-decoration: underline;
+            outline: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Navigation Bar -->
+    <div class="main-nav">
+        <a href="index.html" class="logo">
+            <span style="color: red;">E</span><span style="color: blue">b</span><span style="color:yellow">a</span><span style="color:green">y</span>
+        </a>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." tabindex="0">
+            <button type="submit" tabindex="0">Search</button>
+        </div>
+        <div class="nav-options">
+            <a href="#" tabindex="0">Log In</a>
+            <a href="#" tabindex="0">Sign Up</a>
+            <select id="language-select" tabindex="0">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Sub Navigation Bar under Search -->
+    <div class="sub-nav">
+        <a href="#" tabindex="0">Home</a>
+        <a href="#" tabindex="0">Shop</a>
+        <a href="#" tabindex="0">Categories</a>
+        <a href="#" tabindex="0">Deals</a>
+        <a href="#" tabindex="0">Customer Service</a>
+    </div>
+    <div><h1>For future development</h1></div>
+
+    <footer>
+        <a href="options.html" tabindex="0">Explore Options</a>
+    </footer>
+</body>
+</html>
