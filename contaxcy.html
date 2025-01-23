@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, red, blue, yellow, blue);
+            color: white;
+        }
+
+        /* Navigation Styles */
+        .main-nav, .sub-nav {
+            background-color: #393838;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .nav-options {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .dropdown-button, .icon-link, .search-container button {
+            background-color: #393838;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-button:hover, .icon-link:hover {
+            background-color: #505050;
+        }
+
+        /* Sub Navigation Styles */
+        .sub-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .sub-nav a:hover {
+            color: #ddd;
+        }
+
+        /* Contact Container Styles */
+        .contact-container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+        }
+
+        /* Social Media Styles */
+        .social-media {
+            margin: 20px 0;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #ddd;
+        }
+
+        /* Bio Section Styles */
+        .bio {
+            margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #393838;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Navigation Bar -->
+    <div class="main-nav">
+        <a href="index.html" class="logo">
+            <span style="color: red;">E</span>
+            <span style="color: blue;">b</span>
+            <span style="color: yellow;">a</span>
+            <span style="color: #32CD32;">y</span>
+        </a>
+        <div class="nav-options">
+            <div class="categories-dropdown">
+                <button class="dropdown-button">Categories</button>
+            </div>
+            <a href="cart.html" class="icon-link">
+                <img src="Images/cart-icon.png" alt="Cart" class="icon" />
+                <span class="item-count">0</span>
+            </a>
+            <a href="wishlist.html" class="icon-link">
+                <img src="Images/wishlist-icon.png" alt="Wishlist" class="icon" />
+            </a>
+            <a href="account.html" class="icon-link">Account</a>
+            <select id="language-select" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Sub Navigation Bar -->
+    <div class="sub-nav">
+        <a href="http://127.0.0.1:5500/index.html" data-text="home">Home</a>
+        <a href="http://127.0.0.1:5500/forfyurueecveoment.html" data-text="shop">Shop</a>
+        <a href="http://127.0.0.1:5500/forfyurueecveoment.html" data-text="categories">Categories</a>
+        <a href="http://127.0.0.1:5500/forfyurueecveoment.html" data-text="deals">Deals</a>
+        <a href="http://127.0.0.1:5500/forfyurueecveoment.html" data-text="customer-service">Customer Service</a>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong> 123 Fake Street, Imaginary City, CA 90210</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="http://127.0.0.1:5500/forfyurueecveoment.html" target="_blank">Facebook</a>
+            <a href="http://127.0.0.1:5500/forfyurueecveoment.html" target="_blank">Twitter</a>
+            <a href="http://127.0.0.1:5500/forfyurueecveoment.html" target="_blank">Instagram</a>
+        </div>
+
+        <!-- Bio Section -->
+        <div class="bio">
+            <h3>About Us</h3>
+            <p>We are dedicated to providing the best quality dresses for every occasion. Our team works hard to ensure that every piece is crafted with love and attention to detail. Join us as we continue to grow our passion for fashion!</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <a href="http://127.0.0.1:5500/contaxcy.html" data-text="explore-options">Explore Options</a>
+    </footer>
+</body>
+</html>
